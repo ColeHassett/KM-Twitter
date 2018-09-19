@@ -1,0 +1,27 @@
+{
+  "name": "km-twitter",
+  "version": "1.0.0",
+  "description": "Twitter Search Web App",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColeHassett/KM-Twitter.git"
+  },
+  "author": "Cole Hassett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColeHassett/KM-Twitter/issues"
+  },
+  "homepage": "https://github.com/ColeHassett/KM-Twitter#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3",
+    "socket.io": "^2.1.1",
+    "twitter": "^1.7.1"
+  }
+}

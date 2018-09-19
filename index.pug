@@ -1,0 +1,10 @@
+html
+	head
+		title CSH Twitter App
+		script(src="/assets/js/socket.io.js")
+	body
+		div.search_div
+			input#search_username(type="text" name="search_username")
+			input#search_button(type="button" name="search_button" value="Search" onclick="doSearch()")
+		p#search_results
+	script(src="/assets/js/script.js")
