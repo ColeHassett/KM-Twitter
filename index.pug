@@ -2,9 +2,19 @@ html
 	head
 		title CSH Twitter App
 		script(src="/assets/js/socket.io.js")
-	body
-		div.search_div
-			input#search_username(type="text" name="search_username")
-			input#search_button(type="button" name="search_button" value="Search" onclick="doSearch()")
-		p#search_results
+		link(href='assets/css/bootstrap.min.css', rel='stylesheet')
+		link(href='assets/css/style.css', rel='stylesheet')
+	body.twitter_body
+		div.search_div.form-group.text-center.mt-4
+			span Term: 
+			input.m-1#search_term(type="text" name="search_term")
+			span Username: 
+			input.m-1#search_username(type="text" name="search_username")
+			span Amount: 
+			input.m-1#search_amount(type="number" name="search_amount" min="1" max="100" step="1")
+			br
+			input.m-2.btn.btn-primary#search_button(type="button" name="search_button" value="Find Users" onclick="doSearch('User')")
+			input.m-2.btn.btn-primary#search_tweet_button(type="button" name="search_button" value="Find Tweets" onclick="doSearch('Tweet')")
+			input.m-2.btn.btn-primary#search_user_tweet_button(type="button" name="search_button" value="Find User Tweets" onclick="doSearch('UserTweet')")
+		div.m-5.text-center.card-columns#search_results
 	script(src="/assets/js/script.js")

@@ -19,7 +19,6 @@
   "homepage": "https://github.com/ColeHassett/KM-Twitter#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "nodemon": "^1.18.4",
     "pug": "^2.0.3",
     "socket.io": "^2.1.1",
     "twitter": "^1.7.1"
