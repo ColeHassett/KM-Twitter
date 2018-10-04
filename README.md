@@ -5,8 +5,11 @@ For this assessment, I chose to work on the twitter API project. I picked this p
 
 # Running the Application
 1. npm init
-2. node server.js
-3. Go to localhost:8080 in a browser
+2. Obtain Twitter api keys here: https://developer.twitter.com/en/apply-for-access
+3. Follow Twitters instructions to create an app and obtain your keys
+4. Enter your keys into "assets/twitter_info.js"
+5. node server.js
+6. Go to localhost:8080 in a browser
 
 # OS and Libraries
 This was written with Windows OS in mind. NPM packages used are Express, Pug, Socket.IO, and Twitter.
